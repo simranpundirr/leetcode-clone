@@ -8,8 +8,6 @@ Target users-
 • Students preparing for technical interviews
 • Competitive programmers
 • Beginners learning Data Structures & Algorithms
-• Software engineers improving coding skills
-• Universities conducting programming labs
 
 Functional requirements-
 i) User management -
@@ -55,3 +53,29 @@ iii) analysing your algorithm
 iv) personalised learning i.e identifying your weak concepts and your current expectations from the platform (ie your motive) and building a roadmap according to that
 v) complementing theory with examples for concepts you use in your algorithm / submission.
 vi) dry run- helps you visualise your algorithm with a sample test case.
+
+NON FUNCTIONAL REQUIRMENTS-
+i) performance
+a) judge system should be scalable fro concurrent submission
+b) AI Response to be <300 ms
+c) Search query <500 ms
+
+ii) security
+a)password hashing
+b) jwt authentication
+c) https
+d) sql injection
+d) cross site scripting / xss
+e) cross site request forgery protection
+
+iii)scalability
+a) support multiple judges
+b) horizontal backend scaling (ie utilising load balancer)
+c) containerised code execution(after execution container deletes)
+d) caching frequently accessed problems because accessing database over n over for the same problem isnt practical(using redi tool)
+
+iv) reliability
+a) daily backups
+b) submission persistence even during server crash so progress isnt lost
+c) logging errors universally
+
